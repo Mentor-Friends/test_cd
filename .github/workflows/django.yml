@@ -11,4 +11,3 @@ jobs:
     steps:
     - name: connect and pull
       run: ssh hukum@108.235.156.95 -p2222 thinkagain@123 "cd test_deploy && git checkout main && git pull && exit"
-      shell: "thinkagain@123"
