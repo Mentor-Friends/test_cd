@@ -12,8 +12,8 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        host: 108.235.156.95
-        username: hukum
-        password: thinkagain@321
+        host: ${{secrets.SSH_HOST}}
+        username: ${{secrets.SSH_USER}}
+        password:  ${{secrets.SSH_PASSWORD}}
         port: 2222
         script: "echo 'what is up'>> abc.txt"
