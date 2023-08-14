@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: connect and pull
-      run: ssh hukum@108.235.156.95 -p2222 thinkagain@123 "cd test_deploy && git checkout main && git pull && exit"
+      run: ssh hukum@108.235.156.95 -p2222 "bash -s" <<EOF  thinkagain@123 EOF" cd test_deploy && git checkout main && git pull && exit"
