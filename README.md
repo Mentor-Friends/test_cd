@@ -1,2 +1,1 @@
-# test_cd
-Testing Continuous deployment
+# Django Application
