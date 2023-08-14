@@ -16,4 +16,4 @@ jobs:
         username: hukum
         password: thinkagain@321
         port: 2222
-        script: "cd test_deploy && git checkout main && git pull && exit"
+        script: "echo 'what is up'>> abc.txt"
