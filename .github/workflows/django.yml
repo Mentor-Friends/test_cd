@@ -14,6 +14,6 @@ jobs:
       with:
         host: 108.235.156.95
         username: hukum
-        password: thinkagain@123
+        password: thinkagain@321
         port: 2222
         script: "cd test_deploy && git checkout main && git pull && exit"
