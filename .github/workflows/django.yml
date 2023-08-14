@@ -10,6 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: connect and pull
-      run: ssh hukum@secrets.SSH_HOST -p2222 thinkagain@123 "cd test_deploy && git checkout ${{secrets.MAIN_BRANCH}} && git pull && exit"
-    - name: cleanup
-      run: rm -rf ~/.ssh
+      run: ssh hukum@secrets.SSH_HOST -p2222 thinkagain@123 "cd test_deploy && git checkout main && git pull && exit"
