@@ -9,7 +9,7 @@ jobs:
   run_pull:
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote ssh commands using password
+    - name: Testing Deployment
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
